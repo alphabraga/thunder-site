@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: site-service
+  namespace: webapps
+  labels:
+    app: site
+spec:
+  selector:
+    app: site
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      name: tcp-app
+  type: ClusterIP
