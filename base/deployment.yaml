@@ -16,7 +16,7 @@ spec:
         app: site
     spec:
       containers:
-      - image: alphabraga/thunder-site:0.0.3
+      - image: alphabraga/thunder-site:0.0.4
         name: site
         ports:
         - containerPort: 80
